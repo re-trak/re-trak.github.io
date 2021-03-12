@@ -10,16 +10,12 @@ module.exports = {
     },
     social: [
       {
-        name: `twitter`,
-        url: `https://twitter.com/huffonism`,
+        name: `facebook`,
+        url: `https://www.facebook.com/monthly.nlp`,
       },
       {
         name: `github`,
         url: `https://github.com/huffon`,
-      },
-      {
-        name: `instagram`,
-        url: `https://instagram.com/huffonism`,
       },
       {
         name: `linkedin`,

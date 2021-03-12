@@ -1,9 +1,8 @@
 name: Karter
 bio: |
-  One must live the way one thinks or end up thinking the way one has lived.
+  One must live the way one thinks.
 avatar: ./avatars/karter.jpg
 featured: true
 social:
-  - url: https://github.com/huffon
-  - url: https://twitter.com/huffonism
+  - url: https://www.facebook.com/huffon
   - url: https://instagram.com/huffonism
