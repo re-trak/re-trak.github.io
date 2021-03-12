@@ -1,0 +1,9 @@
+name: Karter
+bio: |
+  Think, Collect then Curate
+avatar: ./avatars/karter.jpg
+featured: true
+social:
+  - url: https://github.com/huffon
+  - url: https://twitter.com/huffonism
+  - url: https://instagram.com/huffonism
