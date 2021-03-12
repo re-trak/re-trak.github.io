@@ -1,7 +1,7 @@
 ---
-title: Test Case2
+title: Test Case
 author: Karter
-date: 2021-03-13
+date: 2021-03-12
 hero: ./images/hero.jpg
 ---
 
