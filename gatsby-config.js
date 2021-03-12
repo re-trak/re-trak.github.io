@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `re-Trak`,
-    name: `re-Track`,
+    name: `re-Trak`,
     siteUrl: `https://re-trak.github.io/`,
     description: `This is my description that will be used in the meta tags and important for search results`,
     hero: {
