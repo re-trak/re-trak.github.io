@@ -5,7 +5,7 @@ date: 2021-03-12
 hero: ./images/hero.jpg
 ---
 
-BERT 저자진은 두 문장 간 유사도를 계산하는 Semantic Textual Similarity, 두 문장 사이 추론 관계를 분류하는 Natural Language Inference 등과 같이 두 문장을 입력으로 받아 하나의 값을 반환하는 문제 세팅에서 [SEP] 토큰을 활용한 Cross-encoder 방식을 채택하였습니다.
+ss BERT 저자진은 두 문장 간 유사도를 계산하는 Semantic Textual Similarity, 두 문장 사이 추론 관계를 분류하는 Natural Language Inference 등과 같이 두 문장을 입력으로 받아 하나의 값을 반환하는 문제 세팅에서 [SEP] 토큰을 활용한 Cross-encoder 방식을 채택하였습니다.
 
 트랜스포머 아키텍처를 활용한 Cross-encoder 방식의 장점은 두 문장이 Self-attention을 통해 상호 간 attend 될 수 있으므로 두 문장 사이의 관계를 면밀하게 파악할 수 있다는 점에 있습니다. 두 문장을 구성하는 모든 토큰들 간 어텐션 연산이 수행되기 때문이죠.
 
