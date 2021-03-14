@@ -61,5 +61,11 @@ module.exports = {
       options: {
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-re-trak-github-io`
+      }
+    },
   ],
 };

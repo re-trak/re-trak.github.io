@@ -13,6 +13,7 @@ hero: ./images/arena.png
 |:-----:|
 |2018-2020년 언어 모델 크기 변화 추이 |
 
+
 ### What happened ?
 
 2020년은 [Meena](https://arxiv.org/abs/2001.09977), [Turing-NLG](https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/), [Blender](https://arxiv.org/abs/2004.13637) 그리고 [GPT-3](https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf) 까지, 이전까지 볼 수 없었던 크기의 언어 & 대화 모델이 등장한 한 해였습니다. 동시에 이처럼 거대한 모델을 훈련시킨다는 것이 얼마나 돈이 많이 들고, 많은 에너지를 필요로 하는 실험인지에 대해 연구자들이 더 잘 [인지](https://www.aclweb.org/anthology/P19-1355/)하게 된 해이기도 합니다. 때문에 거대한 언어 모델을 경량화하려는 연구들이 다양한 방향으로 발전을 하고 있죠. 최근에는 많은 연구들이 [Pruning](https://papers.nips.cc/paper/2020/file/eae15aabaa768ae4a5993a8a4f4fa6e4-Paper.pdf), [Quantization](https://openreview.net/forum?id=dV19Yyi1fS3), [Distillation](https://arxiv.org/abs/1910.01108) 그리고 [Compression](https://www.aclweb.org/anthology/2020.emnlp-main.633/) 등의 기법을 발전시키는 방향으로 흘러가고 있습니다. 또 다른 접근법으로는 Transformer 아키텍처 자체를 보다 효율적으로 만드는 방향이 있겠습니다. 이러한 방향에는 [Performer](https://openreview.net/forum?id=Ua6zuk0WRH), [Big Bird](https://papers.nips.cc/paper/2020/file/c8512d142a2d849725f31a9a7a361ab9-Paper.pdf)와 같은 아키텍처 연구들이 존재합니다.
@@ -21,7 +22,7 @@ hero: ./images/arena.png
 |:-----:|
 |[Long Range Arena](https://openreview.net/pdf?id=qVyeW-grC2k) |
 
-추가로 [`experiment-impact-tracker`](https://arxiv.org/abs/2002.05651)와 같은 도구들은 모델의 에너지 효율성을 보다 쉽게 추적할 수 있도록 도와주고 있습니다. 또한 최근에는 [SustaiNLP](https://sites.google.com/view/sustainlp2020/home?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter), [EfficienQA](https://ai.google.com/research/NaturalQuestions/efficientqa?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter)와 같이 **효율성**에 집중을 한 워크샵들도 등장하며 다양한 Competition과 벤치마크의 설립을 장려하고 있습니다.
+추가로 [`experiment-impact-tracker`](https://arxiv.org/abs/2002.05651)와 같은 도구들은 모델의 에너지 효율성을 보다 쉽게 추적할 수 있도록 도와주고 있습니다. 또한 최근에는 [SustaiNLP](https://sites.google.com/view/sustainlp2020/home?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter), [EfficientQA](https://ai.google.com/research/NaturalQuestions/efficientqa?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter)와 같이 **효율성**에 집중을 한 워크샵들도 등장하며 다양한 Competition과 벤치마크의 설립을 장려하고 있습니다.
 
 
 ### Why is it important ?
@@ -42,7 +43,9 @@ hero: ./images/arena.png
 
 ### What happened ?
 
-거대 언어 모델들은 사전 학습 과정을 통해, 세상에 존재하는 많은 지식을 학습할 수 있다는 것을 여러 결과를 통해 보여주었습니다. 외부 맥락 없이도 질문에 [답을 하는 모습](https://www.aclweb.org/anthology/2020.emnlp-main.437.pdf)을 보여주는가 하면, 사실 관계를 [재현하는 능력](https://www.aclweb.org/anthology/2020.tacl-1.28.pdf)을 보여주는 식으로 말이죠. 그러나 이처럼 지식을 모델 파라미터를 통해 **Implicit하게 저장**하는 것은 비효율적이이며, 지식을 더 많이 축적하기 위해서는 보다 점점 더 큰 모델 (Parameter)을 필요로 하게 된다는 단점이 있습니다. 최근에는 [REALM](https://arxiv.org/abs/2002.08909), [RAG](https://arxiv.org/abs/2005.11401), [knn-LM](https://openreview.net/forum?id=HklBjCEKvH) 등과 같이 **Retrieval 모듈**과 **언어 모델**을 함께 학습시켜 `Open-domain QA`, `언어 모델링` 등의 **Knowledge-intensive** 태스크에서 좋은 결과를 얻을 수 있다고 주장하는 연구들이 많이 등장하고 있습니다. 해당 접근의 장점은 언어 모델 사전 학습 과정에 **Retrieval 모듈**을 레버리지하기 때문에 언어 모델을 보다 효율적으로 학습시킬 수 있다는 것입니다. 언어 모델은 지식을 기억하는 짐을 덜고, **자연어 이해**에 보다 집중을 하는 방식으로 학습을 진행하면 되기 때문이겠죠. 이러한 흐름 속에 진행된 **EfficientQA** 대회에서 좋은 결과를 얻었던 모델들을 살펴보니, 해당 모델들은 모두 **Retrieval 모듈**에 의존을 하고 있었습니다.
+거대 언어 모델들은 사전 학습 과정을 통해, 세상에 존재하는 많은 지식을 학습할 수 있다는 것을 여러 결과를 통해 보여주었습니다. 외부 맥락 없이도 질문에 [답을 하는 모습](https://www.aclweb.org/anthology/2020.emnlp-main.437.pdf)을 보여주는가 하면, 사실 관계를 [재현하는 능력](https://www.aclweb.org/anthology/2020.tacl-1.28.pdf)을 보여주는 식으로 말이죠. 그러나 이처럼 지식을 모델 파라미터를 통해 **Implicit하게 저장**하는 것은 비효율적이이며, 지식을 더 많이 축적하기 위해서는 보다 점점 더 큰 모델 (Parameter)을 필요로 하게 된다는 단점이 있습니다.
+
+최근에는 [REALM](https://arxiv.org/abs/2002.08909), [RAG](https://arxiv.org/abs/2005.11401), [knn-LM](https://openreview.net/forum?id=HklBjCEKvH) 등과 같이 **Retrieval 모듈**과 **언어 모델**을 함께 학습시켜 `Open-domain QA`, `언어 모델링` 등의 **Knowledge-intensive** 태스크에서 좋은 결과를 얻을 수 있다고 주장하는 연구들이 많이 등장하고 있습니다. 해당 접근의 장점은 언어 모델 사전 학습 과정에 **Retrieval 모듈**을 레버리지하기 때문에 언어 모델을 보다 효율적으로 학습시킬 수 있다는 것입니다. 언어 모델은 지식을 기억하는 짐을 덜고, **자연어 이해**에 보다 집중을 하는 방식으로 학습을 진행하면 되기 때문이겠죠. 이러한 흐름 속에 진행된 **EfficientQA** 대회에서 좋은 결과를 얻었던 모델들을 살펴보니, 해당 모델들은 모두 **Retrieval 모듈**에 의존을 하고 있었습니다.
 
 
 ### Why is it important ?
@@ -63,11 +66,13 @@ hero: ./images/arena.png
 
 ### What happened ?
 
-최근 몇 년간 진행된 사전 학습의 발전 덕분에, 특정 태스크를 수행하기 위해 필요한 훈련 데이터의 수는 획기적으로 줄었습니다. 그리고 이제는 단 수 십개의 훈련 데이터만으로 **태스크를 모델에게 설명 (demonstartion)**할 수 있다고 주장하는 [연구](https://www.aclweb.org/anthology/2020.emnlp-main.38.pdf)들도 등장하고 있습니다.  이처럼 **Few-shot Learning** 에서 가장 자연스럽다고 여겨질 수 있는 패러다임은 **태스크 자체를 언어 모델로 재구성**하는 것입니다. 이러한 패러다임에서 가장 유망한 연구가 **GPT-3**의 **In-Context learning**이며, GPT-3는 실제로 **입력 값**과 **기대되는 출력 값**으로 구성된 **몇 개의 예제**들을 기반으로 **모델 가중치 업데이트** 없이 예측을 수행합니다. 그러나 이러한 세팅은 몇 가지 문제를 지니고 있는데, 이는 모델이 파라미터에 지니고 있는 지식을 기반으로 예측을 수행하게 되기 때문에 **반드시 거대한 모델을 활용**해야 하며, 모델이 예측을 하는데 활용할 수 있는 예제가 **최대 입력 길이에 따라 제한적**이며, 예제라고 불리우는 **Prompt가 사람에 의해서 조정**되어야 한다는 점입니다.
+최근 몇 년간 진행된 사전 학습의 발전 덕분에, 특정 태스크를 수행하기 위해 필요한 훈련 데이터의 수는 획기적으로 줄었습니다. 그리고 이제는 단 수 십개의 훈련 데이터만으로 **태스크를 모델에게 설명 (demonstartion)**할 수 있다고 주장하는 [연구](https://www.aclweb.org/anthology/2020.emnlp-main.38.pdf)들도 등장하고 있습니다.  이처럼 **Few-shot Learning** 에서 가장 자연스럽다고 여겨질 수 있는 패러다임은 **태스크 자체를 언어 모델로 재구성**하는 것입니다.
+
+이러한 패러다임에서 가장 유망한 연구가 **GPT-3**의 **In-Context learning**이며, GPT-3는 실제로 **입력 값**과 **기대되는 출력 값**으로 구성된 **몇 개의 예제**들을 기반으로 **모델 가중치 업데이트** 없이 예측을 수행합니다. 그러나 이러한 세팅은 몇 가지 문제를 지니고 있는데, 이는 모델이 파라미터에 지니고 있는 지식을 기반으로 예측을 수행하게 되기 때문에 **반드시 거대한 모델을 활용**해야 하며, 모델이 예측을 하는데 활용할 수 있는 예제가 **최대 입력 길이에 따라 제한적**이며, 예제라고 불리우는 **Prompt가 사람에 의해서 조정**되어야 한다는 점입니다.
 
 최근에는 보다 [작은 모델을 활용한다던가](https://arxiv.org/abs/2009.07118), [Fine-tuning 과정을 혼합한다던가](https://arxiv.org/abs/2012.15723), [자연어 Prompt를 자동으로 생성한다던가](https://arxiv.org/abs/2010.15980) 등 **Few-shot Learning**을 위한 다양한 방향성의 연구들이 수행되고 있습니다. 그리고 이러한 연구들은 넓게 보자면, 사전 학습된 **생성 모델의 생성 능력을 레버리지**하는 [Controllable Text Generation](https://lilianweng.github.io/lil-log/2021/01/02/controllable-neural-text-generation.html)과 맞닿아 있기도 합니다.
 
-**Few-shot Learning**은 모델로 하여금 많은 태스크를, 보다 빠르게 풀 수 있게 도와줄 수 있습니다. 그러나 모든 태스크의 수행을 위해 모델의 파라미터를 각각 업데이트하는 것은 전혀 효율적이지 않습니다. 대신 **부분적인 파라미터만 조정하는 전략**을 취하는 것이 훨씬 더 바람직할 수 있습니다. 이를 위해 [Adpater](http://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf)개념을 통해 **Fine-tuning**을 보다 실용적이고, 효율적으로 진행할 수 있다는 연구들도 등장하고 있는가 하면, [Sparse Parameter Vector](https://arxiv.org/abs/2012.07463)를 활용하는 연구, 모델 가중치 중 태스크 별로 [`bias` 값만 조정](https://nlp.biu.ac.il/~yogo/bitfit.pdf)하는 연구 등도 등장하고 있습니다.
+**Few-shot Learning**은 모델로 하여금 많은 태스크를, 보다 빠르게 풀 수 있게 도와줄 수 있습니다. 그러나 모든 태스크의 수행을 위해 모델의 파라미터를 각각 업데이트하는 것은 전혀 효율적이지 않습니다. 대신 **부분적인 파라미터만 조정하는 전략**을 취하는 것이 훨씬 더 바람직할 수 있습니다. 이를 위해 [Adapter](http://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf)개념을 통해 **Fine-tuning**을 보다 실용적이고, 효율적으로 진행할 수 있다는 연구들도 등장하고 있는가 하면, [Sparse Parameter Vector](https://arxiv.org/abs/2012.07463)를 활용하는 연구, 모델 가중치 중 태스크 별로 [`bias` 값만 조정](https://nlp.biu.ac.il/~yogo/bitfit.pdf)하는 연구 등도 등장하고 있습니다.
 
 
 ### Why is it important ?
