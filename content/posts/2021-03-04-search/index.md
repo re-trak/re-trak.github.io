@@ -3,6 +3,7 @@ title: "OpenMatch: An Open-Source Package for Information Retrieval"
 author: Karter
 date: 2021-03-04
 hero: ./images/open.jpg
+excerpt: Semantic Search Pipeline
 ---
 
 신경망의 눈부신 발전에 따라 여러 **검색 엔진들의 성능도 함께 개선**되었다는 포스트들을 많이 접해보셨을 것 같습니다.

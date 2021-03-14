@@ -1,8 +1,9 @@
 ---
 title: Sentence BERT의 성능 개선을 꾀하는 Augmented SBERT
 author: Karter
-date: 2021-03-12
+date: 2021-03-15
 hero: ./images/aug.jpg
+excerpt: Augmeneted SentenceBERT
 ---
 
 **BERT** 저자진은 두 문장 간 유사도를 계산하는 **Semantic Textual Similarity**, 두 문장 사이 추론 관계를 분류하는 **Natural Language Inference** 등과 같이 두 문장을 입력으로 받아 하나의 값을 반환하는 문제 세팅에서 `[SEP]` 토큰을 활용한 `Cross-encoder` 방식을 채택하였습니다.

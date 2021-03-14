@@ -3,6 +3,7 @@ title: 예시를 통한 ROUGE 성능 지표의 이해
 author: Karter
 date: 2019-11-16
 hero: ./images/equation1.png
+excerpt: ROUGE
 ---
 
 _본 글은 Northeastern University의 강의 자료 [**What is ROUGE and how it works for evaluation of

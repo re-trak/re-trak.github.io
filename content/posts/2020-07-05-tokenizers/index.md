@@ -3,6 +3,7 @@ title: HuggingFace 내 토크나이저 종류 살펴보기
 author: Karter
 date: 2020-07-05
 hero: ./images/hf.jpg
+excerpt: Huggingface Tokenizers
 ---
 
 Huggingface Transformers가 버전 3에 접어들며, 문서화에도 더 많은 신경을 쓰고 있습니다. 그리고 이러한 문서화의 일환으로 라이브러리 내에 사용된 토크나이저들의 종류에 대해 간단히 설명을 해주는 좋은 문서가 있어, 번역을 해보았습니다. 최대한 원문을 살려 번역을 하고자 했으며, 원문은 [이곳](https://huggingface.co/transformers/master/tokenizer_summary.html)에서 찾아보실 수 있습니다.

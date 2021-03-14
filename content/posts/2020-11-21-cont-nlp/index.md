@@ -3,6 +3,7 @@ title: Supervised Contrastive Learning for Pre-trained Language Model Fine-tunin
 author: Karter
 date: 2020-11-21
 hero: ./images/scl.png
+excerpt: Supervised Contrastive Learning
 ---
 
 ## Contrastive Learning?

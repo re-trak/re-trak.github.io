@@ -3,6 +3,7 @@ title: Legal NLP, 자연어 처리는 법률 시스템을 어떻게 개선할 �
 author: Karter
 date: 2020-05-23
 hero: ./images/legal.png
+excerpt: Legal NLP
 ---
 
 _본 글은 2020년도 ACL에 제출된 논문 [**How Does NLP Benefit Legal System: A Summary of Legal Artificial Intelligence?**](https://arxiv.org/abs/2004.12158)를 보고 기록을 위해 정리한 글입니다. 보다 자세한 내용이 궁금하신 분들은 원 논문을 참조해주시기 바랍니다._

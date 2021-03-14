@@ -3,6 +3,7 @@ title: GLUE, 벤치마크를 통해 BERT 이해하기
 author: Karter
 date: 2019-11-16
 hero: ./images/final_glue_score.png
+excerpt: GLUE Benchmark
 ---
 
 _본 글은 Chris McCormick과 Nick Ryan이 공동으로 작성한 [**GLUE Explained: Understanding BERT Through Benchmarks**](https://mccormickml.com/2019/11/05/GLUE/)를 저자의 허락을 받아 한국어로 옮긴 글입니다. 잦은 의역이 있으니 원문을 살려서 읽고자 하신 분들은 링크를 참조해주세요._

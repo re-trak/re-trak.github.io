@@ -67,5 +67,13 @@ module.exports = {
         shortname: `https-re-trak-github-io`
       }
     },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `G-1ZMN9450YB`,
+        head: false,
+        anonymize: true,
+      },
+    }
   ],
 };
