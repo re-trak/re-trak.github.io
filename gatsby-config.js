@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `re:Trak`,
+    title: `Karter's re:Trak`,
     name: `re:Trak`,
-    siteUrl: `https://re-trak.github.io/`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    siteUrl: `https://karter.io/`,
+    description: `Karter's latest news on Natural Language Processing`,
     hero: {
       heading: `For the latest news on Natural Language Processing`,
       maxWidth: 652,
