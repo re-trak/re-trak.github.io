@@ -70,9 +70,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingId: `G-1ZMN9450YB`,
-        head: false,
+        trackingId: `G-1ZMN9450YB`, // 측정 ID
+        head: true,
         anonymize: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-1ZMN9450YB", // Google Analytics / GA
+          // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+        ],
       },
     }
   ],
