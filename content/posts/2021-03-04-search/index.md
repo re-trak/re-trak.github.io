@@ -10,7 +10,7 @@ excerpt: Semantic Search Pipeline
 
 > [Bing](https://blogs.bing.com/search-quality-insights/May-2018/Towards-More-Intelligent-Search-Deep-Learning-for-Query-Semantics): Towards More Intelligent Search: Deep Learning for Query Semantics
 
-> [Google](https://blog.google/products/search/search-language-understanding-bert/) Understanding searches better than ever before
+> [Google](https://blog.google/products/search/search-language-understanding-bert/): Understanding searches better than ever before
 
 기존 `Term 기반 검색`의 경우, **시맨틱한 의미는 같지만 다르게 생긴 단어**가 포함된 문서를 찾아내기 어렵다는 한계를 지니고 있습니다. 예를 들어 사용자가 `아이패드 팔기`를 검색한 경우, 해당 의미를 `아이패드 판매`로 표현한 문서를 추출하기 어렵다는 것입니다.
 
